@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Contact Form</title>
+<meta charset="utf-8">
+<link href="finalproject.css" rel="stylesheet">
+<style>
+
+#wk { float: right;
+      display: block;
+	  margin: 0 auto; }
+	   
+fieldset { float: center;
+           width: 320px;
+           border: 2px ridge #9D7C49;
+           padding: 10px;
+           margin-bottom: 10px; }
+
+legend { font-family: Georgia, "Times New Roman", serif;
+         font-weight: bold; }
+
+label { font-family: Arial, sans-serif; }
+</style>
+</head>
+<body>
+<header>
+<h1>Contact Us</h1>
+</header>
+<nav>
+  <b><a href="index.html">About</a>
+     <a href="Pithealth.html">Health</a>
+	 <a href="servicessports.html">Services/Sports</a>
+     <a href="Pitmyths.html">Myths</a>
+	 <a href="BSL.html">BSL</a>
+	 <a href="Pitresources.html">Resources</a>
+	 <a href="contactus.html">Contact Us</a>
+  </b>
+</nav>
+<main>
+<p><img id="wk" src="wk.JPG" alt="Willow Kramer" height="480" width="640"></p>
+<h2>Contact Us</h2>
+ <p>Required fields marked with an asterisk *</p>
+<form method="post" action="mailto:s1086234@student.mcckc.edu">
+<fieldset><legend>Customer Information</legend>
+<label for="firstname">*First Name:</label>
+<input type="text" name="myName" id="myName" required="required" placeholder="Your First Name"><br><br>
+<label for="lastname">*Last Name:</label>
+<input type="text" name="lName" id="lName" required="required" placeholder="Your Last Name"><br><br> 
+<label for="myEmail">*E-mail:</label>
+      <input type="email" name="myEmail" id="myEmail" required="required" placeholder="you@yourdomain.com">
+</fieldset>
+<label for="comments">Comments:</label><br>
+<textarea name="comments" id="comments" rows="4" cols="40"></textarea><br><br>
+<input type="submit" value="Contact"> <input type="reset">
+</form>
+</main>
+</body>
+</html>
